@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*Ter a largura da tela toda*/
+   
+    background-color: rgb(112, 112, 227);
+}
+
+
+h1{
+    text-align: center;
+}
+
+/*Deixando os itens do form em coluna*/
+
+
+/*Container principal*/
+.container {
+    display: flex;
+    box-shadow: 5px 5px 10px black;
+    margin: 3rem;
+    
+    
+}
+
+/*Box 1*/
+.container div:nth-of-type(1){
+    background-color: red;
+   
+   
+}
+
+/*Css grid layout x Flexbox
+
+Css gride layout - interação entre coluna e linha
+
+*/
+
+/*Box 2*/
+.container div:nth-of-type(2){
+    background-color: green;
+ 
+   
+   
+}
