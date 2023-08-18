@@ -7,33 +7,78 @@
 
 body{
     /*Ter a largura da tela toda*/
-   
-    background-color: rgb(112, 112, 227);
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: #ABD8F4
+}
+
+
+header{
+    background-color: #90ACDE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    box-shadow: 1px black;
+}
+
+ul{
+    display: flex;
+    flex-direction: row; 
+}
+
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+
+ a {
+    color: white;
+    text-decoration: none;
 }
 
 
 h1{
     text-align: center;
+    align-items: center;
+    margin: 20px;
 }
 
 /*Deixando os itens do form em coluna*/
 
 
-/*Container principal*/
+/*Container com duas divisões*/
 .container {
     display: flex;
     box-shadow: 5px 5px 10px black;
     margin: 3rem;
+    flex-direction: row;
+    
     
     
 }
 
-/*Box 1*/
+
+/*Box descrição do formulário*/
 .container div:nth-of-type(1){
-    background-color: red;
-   
+    background-color: #90ACDE;
+    padding: 50px;
+    color: white;
+}
+
+.form-text-body{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
    
 }
+
+
 
 /*Css grid layout x Flexbox
 
@@ -41,10 +86,23 @@ Css gride layout - interação entre coluna e linha
 
 */
 
-/*Box 2*/
+/*Box do formulario*/
 .container div:nth-of-type(2){
-    background-color: green;
- 
-   
-   
+    background-color: #90ACDE;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    color: white;
+}
+
+.form h1:nth-child(1){
+    margin-bottom: 3rem;
+}
+/*Formulário*/
+
+form{
+    display: flex;
+    flex-direction: column;
 }
