@@ -2,6 +2,7 @@ const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
+const jobSelect = document.querySelector("#job");
 const messageTextarea = document.querySelector("#message");
 
 
@@ -17,18 +18,30 @@ form.addEventListener("submit", (e)=> {
     }
 
     //Verificar se o e-mail está preenchido e se é válido
-    if(emailInput === "" || !isEmailValid(emailInput.value)){
+    if (emailInput === "" || !isEmailValid(emailInput.value)){
         alert("Porfavor, preencha o seu E-mail");
         return;
     }
 
 
     //Verifica se a senha esta preenchida
-    if(!ValidatePassword(passwordInput.value = "")){
+    if (!validatePassword(passwordInput.value, 8)){
         alert("A senha precisa ser no minimo 8 digitos");
         return;
     }
 
+
+    //Verifica se a situação foi selecionada
+    if (jobSelect.value === "") {
+        alert("Porfavor, preencha sua situação de trabalho");
+        return;
+    }
+
+    //Verificar se a mensagem está preenchida
+    if(messageTextarea.value === ""){
+        alert("Porfavor, preencha a area de mensagem");
+        return;
+    }
     //Se todos os campos estiverem preenchidos envie o form
     form.submit();
 
@@ -52,10 +65,10 @@ function isEmailValid(email) {
 
 //Função senha inválida
 
-function ValidatePassword(password, minDigits){
-    if(password.leanght >= minDigits) {
-        return true
+function validatePassword(password, minDigits){
+    if(password.length >= minDigits) {
+        return true;
     }
 
-    return false
+    return false;
 }
