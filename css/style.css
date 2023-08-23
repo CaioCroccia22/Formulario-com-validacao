@@ -22,20 +22,23 @@ header{
     align-items: center;
     padding: 15px;
     max-width: 100%;
-    box-sizing: border-box;
     box-shadow: 0px 0px 5px black;
     list-style: none;
-    display: flex;
 }
 
 
-ul{
-    
+ul {
+
     list-style: none;
     display: flex;
     justify-content: space-between;
-    
 }
+
+li{
+    padding: 10px;
+}
+
+
 
 a {
     color: white;
@@ -57,8 +60,6 @@ h1{
     display: flex;
     box-shadow: 5px 5px 10px black;
     margin: 3rem;
-    
-    
 }
 
 
@@ -73,8 +74,6 @@ h1{
 .form-text-body{
     display: flex;
     font-size: 20px;
-    
-   
 }
 
 
@@ -89,8 +88,6 @@ h1{
     padding: 50px;
     color: white;
     justify-content: space-between;
-    
-    
 }
 
 .form h1:nth-child(1){
@@ -103,21 +100,16 @@ form{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    
 }
 
 
 
 input{
-
     background-color: white;
     border: none;
     height: 30px;
     border-radius: 30px;
     margin-bottom: 10px;
-    
-    
-
 }
 
 select{
@@ -126,7 +118,6 @@ select{
     height: 30px;
     border-radius: 30px;
     margin: 10px;
-
 }
 
 
@@ -137,7 +128,6 @@ textarea{
     border-radius: 30px;
     margin: 10px;
     resize: none;
-
 }
 
 button{
@@ -150,11 +140,8 @@ button{
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    
-
 }
 
 button:hover{
     transform: scale(1.05);
-    
 }
