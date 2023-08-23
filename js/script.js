@@ -17,8 +17,15 @@ form.addEventListener("submit", (e)=> {
     }
 
     //Verificar se o e-mail está preenchido e se é válido
-    if(emailInput === ""){
+    if(emailInput === "" || !isEmailValid(emailInput.value)){
         alert("Porfavor, preencha o seu E-mail");
+        return;
+    }
+
+
+    //Verifica se a senha esta preenchida
+    if(!ValidatePassword(passwordInput.value = "")){
+        alert("A senha precisa ser no minimo 8 digitos");
         return;
     }
 
@@ -40,4 +47,15 @@ function isEmailValid(email) {
     }
 
     return false;
+}
+
+
+//Função senha inválida
+
+function ValidatePassword(password, minDigits){
+    if(password.leanght >= minDigits) {
+        return true
+    }
+
+    return false
 }
