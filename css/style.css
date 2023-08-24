@@ -13,42 +13,22 @@ body{
 }
 
 
-header{
-    background-color: #90ACDE;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    padding: 15px;
-    max-width: 100%;
-    box-shadow: 0px 0px 5px black;
-    list-style: none;
-}
-
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-li{
-    padding: 10px;
-}
-
-
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
 
 h1{
     text-align: center;
     align-items: center;
-    margin: 20px;
+    color: white;
+    margin: 2rem;
+    font-weight: bold;
+    
+}
+
+h2{
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 2rem;
+    font-weight: bold;
 }
 
 /*Deixando os itens do form em coluna*/
@@ -65,7 +45,7 @@ h1{
 /*Box descrição do formulário*/
 .container div:nth-of-type(1){
     background-color: #90ACDE;
-    padding: 50px;
+    padding: 3rem;
     color: white;
     text-align: center;
 }
@@ -76,7 +56,6 @@ h1{
 }
 
 
-
 /*Box do formulario*/
 .container div:nth-of-type(2){
     background-color: #90ACDE;
@@ -84,7 +63,7 @@ h1{
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    padding: 50px;
+    padding: 3rem;
     color: white;
     justify-content: space-between;
 }
@@ -106,35 +85,20 @@ label{
     margin-bottom: 5px;
 }
 
-
-
-input{
+input,
+select,
+textarea
+{
     background-color: white;
     border: none;
     height: 30px;
     border-radius: 30px;
     margin-bottom: 10px;
-}
-
-select{
-    background-color: white;
-    border: none;
-    height: 30px;
-    border-radius: 30px;
-    margin: 10px;
-}
-
-
-textarea{
-    background-color: white;
-    border: none;
-    height: 30px;
-    border-radius: 30px;
-    margin: 10px;
     resize: none;
 }
 
 button{
+
     background-color: #A3FAED;
     border: none;
     height: 50px;
